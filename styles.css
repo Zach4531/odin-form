@@ -46,12 +46,11 @@ form {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .logo {
   background: rgba(0, 0, 0, 0.5);
-  color: white;
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -68,10 +67,25 @@ img {
   background-size: cover;
   height: 100vh;
   width: 425px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .background h1 {
   font-size: 2.5rem;
+}
+
+.background small {
+  position: absolute;
+  bottom: 1rem;
+  align-self: center;
+}
+
+.background a {
+  color: #fff;
 }
 
 main {
@@ -101,6 +115,18 @@ input {
 
 input:focus {
   outline: 2px solid #3b52d4;
+}
+
+input:invalid {
+  outline: 2px solid red;
+  border: 2px solid red;
+}
+
+.confirmation_error {
+  display: none;
+  color: red;
+  padding-top: 8px;
+  font-weight: 600;
 }
 
 .form-row {
